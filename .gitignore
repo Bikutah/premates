@@ -1,0 +1,35 @@
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+/captures
+
+# Local config (SDK path, etc.) - no subir
+local.properties
+
+# Archivos de build nativos
+.externalNativeBuild/
+.cxx/
+
+# Archivos compilados
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Keystores (seguridad)
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
