@@ -22,6 +22,8 @@
     <color name="md_on_error">#601410</color>
 
     <!-- Victoria / Derrota (para historial) -->
-    <color name="victory">#5b8dd9</color>
-    <color name="defeat">#c0392b</color>
+    <color name="victoria">#5b8dd9</color>
+    <color name="victoria_fondo">#0d1b3e</color>
+    <color name="derrota">#c0392b</color>
+    <color name="derrota_fondo">#3e0d0d</color>
 </resources>

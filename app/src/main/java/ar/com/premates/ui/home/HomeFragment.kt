@@ -25,11 +25,11 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        /*
+
         binding.btnVerPartidas.setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_listado)
+            findNavController().navigate(R.id.action_home_to_historial)
         }
-*/
+
         binding.btnAcercaDe.setOnClickListener {
             findNavController().navigate(R.id.action_home_to_acerca_de)
         }
