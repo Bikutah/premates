@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ar.com.premates.ui.login.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment"/>
+    </fragment>
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ar.com.premates.ui.home.HomeFragment"
+        android:label="Inicio">
+        <action
+            android:id="@+id/action_home_to_historial"
+            app:destination="@id/historialFragment"/>
+        <action
+            android:id="@+id/action_home_to_acerca_de"
+            app:destination="@id/acercaDeFragment"/>
+    </fragment>
+
+    <!-- Historial -->
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="ar.com.premates.ui.historial.HistorialFragment"
+        android:label="Historial"/>
+
+    <!-- Acerca de -->
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="ar.com.premates.ui.acercade.AcercaDeFragment"
+        android:label="Acerca de"/>
+
+</navigation>

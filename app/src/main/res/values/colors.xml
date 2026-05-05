@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta principal violeta -->
+    <color name="md_primary">#CDB8FF</color>
+    <color name="md_on_primary">#2D1F5E</color>
+    <color name="md_primary_container">#4A3880</color>
+    <color name="md_on_primary_container">#E6DEFF</color>
+
+    <!-- Superficies -->
+    <color name="md_surface">#0f0f17</color>
+    <color name="md_on_surface">#E6DEFF</color>
+    <color name="md_surface_container">#1C1B2E</color>
+    <color name="md_surface_container_high">#272538</color>
+
+    <!-- Texto secundario -->
+    <color name="md_on_surface_variant">#C4BFCE</color>
+    <color name="md_outline">#938F99</color>
+    <color name="md_outline_variant">#49454F</color>
+
+    <!-- Error -->
+    <color name="md_error">#F2B8B5</color>
+    <color name="md_on_error">#601410</color>
+
+    <!-- Victoria / Derrota (para historial) -->
+    <color name="victoria">#5b8dd9</color>
+    <color name="victoria_fondo">#0d1b3e</color>
+    <color name="derrota">#c0392b</color>
+    <color name="derrota_fondo">#3e0d0d</color>
+</resources>
