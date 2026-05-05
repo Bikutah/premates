@@ -29,10 +29,10 @@ class HomeFragment : Fragment() {
         binding.btnVerPartidas.setOnClickListener {
             findNavController().navigate(R.id.action_home_to_listado)
         }
-
+*/
         binding.btnAcercaDe.setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_about)
-        } */
+            findNavController().navigate(R.id.action_home_to_acerca_de)
+        }
     }
 
     override fun onDestroyView() {
