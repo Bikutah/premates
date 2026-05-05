@@ -1,69 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1a1a2e"
-    android:gravity="center"
+    android:background="?attr/colorSurface"
     android:orientation="vertical"
-    android:padding="32dp">
+    android:padding="24dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SAIRUS"
-        android:textColor="#C89B3C"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+    <!-- Zona central: logo + título + subtítulo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tu comunidad LoL Argentina"
-        android:textColor="#9E9E9E"
-        android:textSize="16sp"
-        android:layout_marginBottom="48dp"/>
 
-    <EditText
-        android:id="@+id/etUsuario"
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREMATES"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tu compañero de invocador.\nStats, partidas y meta en tiempo real."
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Zona inferior: inputs + botón + footer -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#9E9E9E"
-        android:backgroundTint="#C89B3C"
-        android:inputType="text"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#9E9E9E"
-        android:backgroundTint="#C89B3C"
-        android:inputType="textPassword"
-        android:layout_marginBottom="8dp"/>
+        <!-- Input usuario -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-    <TextView
-        android:id="@+id/tvError"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FF5252"
-        android:textSize="14sp"
-        android:visibility="gone"
-        android:layout_marginBottom="16dp"
-        android:text="Usuario o contraseña incorrectos"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="Ingresar"
-        android:textSize="16sp"
-        android:backgroundTint="#C89B3C"
-        android:textColor="#1a1a2e"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input contraseña -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:layout_marginBottom="8dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Error -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario o contraseña incorrectos"
+            android:textColor="?attr/colorError"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Ingresar"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button"/>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al continuar aceptás los Términos y la Política de privacidad"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Paleta principal violeta -->
+    <color name="md_primary">#CDB8FF</color>
+    <color name="md_on_primary">#2D1F5E</color>
+    <color name="md_primary_container">#4A3880</color>
+    <color name="md_on_primary_container">#E6DEFF</color>
+
+    <!-- Superficies -->
+    <color name="md_surface">#0f0f17</color>
+    <color name="md_on_surface">#E6DEFF</color>
+    <color name="md_surface_container">#1C1B2E</color>
+    <color name="md_surface_container_high">#272538</color>
+
+    <!-- Texto secundario -->
+    <color name="md_on_surface_variant">#C4BFCE</color>
+    <color name="md_outline">#938F99</color>
+    <color name="md_outline_variant">#49454F</color>
+
+    <!-- Error -->
+    <color name="md_error">#F2B8B5</color>
+    <color name="md_on_error">#601410</color>
+
+    <!-- Victoria / Derrota (para historial) -->
+    <color name="victory">#5b8dd9</color>
+    <color name="defeat">#c0392b</color>
 </resources>
