@@ -8,6 +8,17 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="ar.com.premates.ui.login.LoginFragment"
-        android:label="Login" />
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ar.com.premates.ui.home.HomeFragment"
+        android:label="Home">
+
+    </fragment>
 
 </navigation>
